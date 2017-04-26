@@ -11,6 +11,7 @@
 
 
 def read_user_file():
+    # 获取用户信息文件
     with file('task_demo_01', 'rb') as fb:
         li = fb.read()
         return eval(li)
@@ -21,6 +22,7 @@ def login(user):
     while True:
         name = raw_input('name: ')
         pwd = raw_input('passwd: ')
+        # 判断用户密码输入错误次数
         if blink < 2:
             if name == user[0] and pwd == user[1]:
                 print 'welcome %s' % user[0]
@@ -29,6 +31,7 @@ def login(user):
                 blink += 1
         else:
             user[-1] = blink
+            # 存储 用户信息（输入错误三次后执行）
             with file('task_demo_01', 'wb') as fb:
                 fb.write('["%s", "%s", %d]' % tuple(user))
             print 'lock is %s' % user[0]
