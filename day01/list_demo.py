@@ -56,5 +56,14 @@ def list_operation():
         print li[i]
 
 
+def del_repeat():
+    # 去除list中多个重复的元素
+    lis = ['zhangsan', 'li', 'wang', 'zhao', 'qian', 'sun', 'li', 'zhou', 'wu', 'li']
+    for i in range(lis.count('li')):
+        lis.remove('li')
+    print lis
+
+
 if __name__ == '__main__':
-    list_operation()
+    del_repeat()
+    # list_operation()

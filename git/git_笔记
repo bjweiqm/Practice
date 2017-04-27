@@ -1,0 +1,74 @@
+1. 官方网站下载
+2. git 自动完成
+    1. Windows 自带自动完成
+3. git 配置
+    1. 基本的配置
+        git config --global user.name 用户名
+        git config -- global user.email 邮箱
+        1. 添加值
+            git config --global --add user.name 用户名
+        2. 查看
+            git config --list --global
+        3. 删除
+            git config --global --unset username 用户名
+        4. 修改
+            git config --global user.name 用户名
+    2. 给常用命令起别名
+        1. git config --global alias.co checkout
+
+4. git 基本工作流程
+    1. 初始化git仓库
+        1. git init 仓库名
+        2. git init --bare 仓库名  //裸仓库
+    2. 已有的工作环境纳入git仓库
+        1. 直接使用 git init
+        2. 克隆裸仓库 git clone 裸仓库的名字 别名
+    3. 基本操作
+        1. 把文件添加到暂存区 git add 文件名 文件名 ...
+            1. 把整个工作去都添加到暂存区 git add -A
+            2. 避免把不需要的文件加入到暂存区
+                在工作取的顶层目录下新建 .gitignore 使用通配符进行过滤 如 *.[oa]以o和a结尾的文件 *~  *.pyc
+                如果过滤中也有需要的文件，可以在前面加 如!test.pyc
+                以/结尾的表示匹配一个目录
+                匹配多个目录 **/res
+        2. 查看暂存区内的文件 git status
+        3. 提交暂存区内的文件 git commit -m '提交信息'
+        4. 删除暂存区与工作去的文件 git rm 文件名
+        5. 还原删除的文件 git reset HEAD 文件名
+        6. 只删除暂存区内的文件 git rm --cached 文件名
+        7. 文件重命名 git mv 老文件名 新文件名
+5. git 本地分支与合并
+    1. 分支
+        1. 创建分支 git branch 分支名
+        2. 切换分支 git checkout 分支名
+        3. 查看提交日志 git log --oneline --decorate --graph --all
+        3. 创建tag git tag "v0(tag_name)" alaba30 (唯一标识码)
+        4. 查看tag git tag
+    2. 合并分支 git 分支名 分支名
+
+6. git:
+
+git config --global user.name "UserName"
+git config --global user.email "Email"
+
+git clone <git 地址>  :克隆地址
+
+
+git add 命令添加新创建或修改的文件到本地的缓存区
+git commit 命令提交到本地代码库 添加参数 -m 添加修改注释
+git push <git 地址> 命令将本地代码库同步到远程代码库
+git status 命令查看当前库git仓库的状态
+git diff --cached 查看修改的文件 （Linux输入q退出）
+
+git branch <分支名称>   :创建分支
+git branch    :查看分支
+git checkout <分支名>   :切换分支
+git merge -m '注释' <分支名称>  :在主分支上执行
+git branch -d <分支名>  ：删除分支
+git branch -D <分支名>  ：强制删除分支
+git reset --hard HEAD^  ：撤销一个合并
+
+
+git log --stat   :日志统计
+git log --pertty  : 日志格式化 pertty=noeline 或 pertty=short |medium|full|fuller|email|raw|
+git log --graph --pertty=oneline : --graph 可视化你的提交图
