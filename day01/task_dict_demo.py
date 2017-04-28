@@ -24,3 +24,20 @@ for i in all_list:
         else:
             dic['k2'] = [i, ]
 print dic
+
+
+# -----------------------------------------------------
+# 默认字典 defaultdict
+
+from collections import defaultdict
+
+values = [11, 22, 33, 44, 55, 66, 77, 88, 99, 90]
+
+my_dict = defaultdict(list)
+
+for value in values:
+    if value > 66:
+        my_dict['k1'].append(value)
+    else:
+        my_dict['k2'].append(value)
+print my_dict
