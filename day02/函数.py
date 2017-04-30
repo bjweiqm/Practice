@@ -24,20 +24,20 @@ aoe()
 
 # 带参函数
 def abc(name):
-    print name
+    print(name)
 
 
 # 带默认参数函数
 def abcs(name='youcai'):
     if name == 'youcai':
-        print 'name'
+        print('name')
     else:
-        print 'meicai'
+        print('meicai')
 
 
 # 指定参数
 def show(a, b):
-    print a, b
+    print(a, b)
 
 # 调用
 show(b=23, a=20)
@@ -45,18 +45,18 @@ show(b=23, a=20)
 
 # 动态参数
 def dong(*args):
-    print args          # args类型为tuple
+    print(args)          # args类型为tuple
 
 dong(1, 2, 3, 4, 5)
 
 
 def dong1(**kwargs):
-    print kwargs        # kwargs类型为dict
+    print(kwargs)        # kwargs类型为dict
 
 
 def dong2(*args, **kwargs):     # 传入参数必须后传指定参数
-    print args
-    print kwargs
+    print(args)
+    print(kwargs)
 # 三种传参方式
 dong2(1, 2, 3, name='zhangsan', age=30, job='gan')
 dong2(*[1, 2, 3], **{'name': 'zhangsan', 'age': 30, 'job': 'nong'})
@@ -71,4 +71,4 @@ def func(a):
     return a
 
 func1 = lambda a: a+1
-print func1(99)
+print(func1(99))

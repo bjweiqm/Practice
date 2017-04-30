@@ -62,28 +62,28 @@ format([[fill]align][sign][#][0][width][,][.precision][type])
 
 
 # % 方式
-print "Infomating of [%s]: \nname:%s \nage:%d \njob:%s " % ('zhangsan', 'zhangsan', 19, 'kaifa')
-print "i am %s" % "alex"
-print "i am %s age %d" % ("alex", 18)               # %d 只能接受数字
-print "i am %(name)s age %(age)d" % {"name": "alex", "age": 18}
-print "percent %.2f" % 99.97623    # 打印浮点数
-print "i am %(pp).2f" % {"pp": 123.425556, }
-print "i am %(pp).2f %%" % {"pp": 123.425556, }     # 打印百分比
-print 'i am %s my hobby is %s' % ('lhf', 1)         # %s可以接受任意参数
+print("Infomating of [%s]: \nname:%s \nage:%d \njob:%s " % ('zhangsan', 'zhangsan', 19, 'kaifa'))
+print("i am %s" % "alex")
+print("i am %s age %d" % ("alex", 18))               # %d 只能接受数字
+print("i am %(name)s age %(age)d" % {"name": "alex", "age": 18})
+print("percent %.2f" % 99.97623)    # 打印浮点数
+print("i am %(pp).2f" % {"pp": 123.425556, })
+print("i am %(pp).2f %%" % {"pp": 123.425556, })     # 打印百分比
+print('i am %s my hobby is %s' % ('lhf', 1) )        # %s可以接受任意参数
 
 # format() 方式：
-print "i am {}, age {}, {}".format("seven", 18, 'alex')
-print "i am {}, age {}, {}".format(*["seven", 18, 'alex'])  # 必须一一对应，否则会报错
-print "i am {0}, age {1}, really {0}".format("seven", 18)
-print "i am {0}, age {1}, really {0}".format(*["seven", 18])
-print "i am {name}, age {age}, really {name}".format(name="seven", age=18)
-print "i am {name}, age {age}, really {name}".format(**{"name": "seven", "age": 18})    # ** 代表传字典
-print "i am {0[0]}, age {0[1]}, really {0[2]}".format([1, 2, 3], [11, 22, 33])
-print "i am {:s}, age {:d}, money {:f}".format("seven", 18, 88888.1)    # s 代表字符串 d 代表整数
-print "i am {:s}, age {:d}".format(*["seven", 18])  # * 代表列表
-print "i am {name:s}, age {age:d}".format(name="seven", age=18)
-print "i am {name:s}, age {age:d}".format(**{"name": "seven", "age": 18})
-print "numbers: {:b},{:o},{:d},{:x},{:X}, {:%}".format(15, 15, 15, 15, 15, 15.87623, 2)  # 2进制 8进制 10进制  x与X: 16进制 %：百分比
-print "numbers: {:b},{:o},{:d},{:x},{:X}, {:%}".format(15, 15, 15, 15, 15, 15.87623, 2)
-print "numbers: {0:b},{0:o},{0:d},{0:x},{0:X}, {0:%}".format(15)
-print "numbers: {num:b},{num:o},{num:d},{num:x},{num:X}, {num:%}".format(num=15)
+print ("i am {}, age {}, {}".format("seven", 18, 'alex'))
+print ("i am {}, age {}, {}".format(*["seven", 18, 'alex']))  # 必须一一对应，否则会报错
+print ("i am {0}, age {1}, really {0}".format("seven", 18))
+print ("i am {0}, age {1}, really {0}".format(*["seven", 18]))
+print ("i am {name}, age {age}, really {name}".format(name="seven", age=18))
+print ("i am {name}, age {age}, really {name}".format(**{"name": "seven", "age": 18}))    # ** 代表传字典
+print ("i am {0[0]}, age {0[1]}, really {0[2]}".format([1, 2, 3], [11, 22, 33]))
+print ("i am {:s}, age {:d}, money {:f}".format("seven", 18, 88888.1))    # s 代表字符串 d 代表整数
+print ("i am {:s}, age {:d}".format(*["seven", 18]))  # * 代表列表
+print ("i am {name:s}, age {age:d}".format(name="seven", age=18))
+print ("i am {name:s}, age {age:d}".format(**{"name": "seven", "age": 18}))
+print ("numbers: {:b},{:o},{:d},{:x},{:X}, {:%}".format(15, 15, 15, 15, 15, 15.87623, 2))  # 2进制 8进制 10进制  x与X: 16进制 %：百分比
+print ("numbers: {:b},{:o},{:d},{:x},{:X}, {:%}".format(15, 15, 15, 15, 15, 15.87623, 2))
+print ("numbers: {0:b},{0:o},{0:d},{0:x},{0:X}, {0:%}".format(15))
+print ("numbers: {num:b},{num:o},{num:d},{num:x},{num:X}, {num:%}".format(num=15))

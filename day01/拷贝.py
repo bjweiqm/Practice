@@ -27,14 +27,14 @@ dic = {
 }
 
 dic2 = copy.copy(dic)
-print id(dic), id(dic['k4'])
-print id(dic2), id(dic2['k4'])
+print(id(dic), id(dic['k4']))
+print(id(dic2), id(dic2['k4']))
 # 修改 dic2 的k4 元素 dic中的k4元素也会变化
 dic2['k4'].append('li')
-print dic
+print(dic)
 
 dic1 = copy.deepcopy(dic)
 dic1['k4'].append('zhou')
 # 深拷贝后 修改 dic1中的k4元素， dic中的k4元素不会变化
-print dic, id(dic)
-print dic1, id(dic1)
+print(dic, id(dic))
+print(dic1, id(dic1))

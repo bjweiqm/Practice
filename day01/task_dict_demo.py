@@ -23,7 +23,7 @@ for i in all_list:
             dic['k2'].append(i)
         else:
             dic['k2'] = [i, ]
-print dic
+print(dic)
 
 
 # -----------------------------------------------------
@@ -34,11 +34,11 @@ from collections import defaultdict
 values = [11, 22, 33, 44, 55, 66, 77, 88, 99, 90]
 
 my_dict = defaultdict(list)
-# print my_dict
+# print(my_dict)
 
 for value in values:
     if value > 66:
         my_dict['k1'].append(value)
     else:
         my_dict['k2'].append(value)
-print my_dict
+print(my_dict)

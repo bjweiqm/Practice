@@ -25,7 +25,7 @@ def login(user):
         # 判断用户密码输入错误次数
         if blink < 2:
             if name == user[0] and pwd == user[1]:
-                print 'welcome %s' % user[0]
+                print('welcome %s' % user[0])
                 break
             else:
                 blink += 1
@@ -34,7 +34,7 @@ def login(user):
             # 存储 用户信息（输入错误三次后执行）
             with file('task_demo_01', 'wb') as fb:
                 fb.write('["%s", "%s", %d]' % tuple(user))
-            print 'lock is %s' % user[0]
+            print('lock is %s' % user[0])
             break
 
 

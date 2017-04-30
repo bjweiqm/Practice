@@ -13,10 +13,10 @@ import collections
 # 创建类
 MytupleClass = collections.namedtuple('MyTupleClass', ['x', 'y', 'z'])
 obj = MytupleClass(11, 22, 33)  # x = 11 x = 22  z = 33
-print obj.x
-print obj.y
-print obj.z
-print dir(obj)
+print(obj.x)
+print(obj.y)
+print(obj.z)
+print(dir(obj))
 """
 
 """
@@ -37,7 +37,7 @@ import collections
 
 import collections
 obj = collections.Counter('fajfjaeoifjoaglalgajdajfl')
-# print obj
+# print (obj)
 ret = obj.most_common(4)            # 从多到少 拿到前4位
-# print ret
+# print( ret)
 """

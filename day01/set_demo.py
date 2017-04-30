@@ -9,7 +9,7 @@
 for i in dir(set()):
 
     if not str(i).startswith('_'):
-        print i
+        print(i)
 
 
 s1 = set([1, 2, 3, 4, 5])
