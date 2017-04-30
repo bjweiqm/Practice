@@ -63,3 +63,12 @@ dong2(*[1, 2, 3], **{'name': 'zhangsan', 'age': 30, 'job': 'nong'})
 a = [1, 2, 3]
 b = {'name': 'zhangsan', 'age': 30, 'job': 'nong'}
 dong2(*a, **b)
+
+
+# lambda 表达式
+def func(a):
+    a += 1
+    return a
+
+func1 = lambda a: a+1
+print func1(99)
