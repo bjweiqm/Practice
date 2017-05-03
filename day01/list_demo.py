@@ -46,14 +46,14 @@ def list_built_in_method_demo():
 def list_operation():
     li = (['zhagnsan', 'lisi', 'wangwu', 'zhaoliu', 'qianqi', 'chenba'])
     # list 切片操作
-    print li[1:4]
+    print(li[1:4])
     # list 使用切片达到翻转的效果
-    print li[::-1]
+    print(li[::-1])
     # 依次拿出list中的元素
     for i in li:
-        print i
+        print(i)
     for i in range(len(li)):
-        print li[i]
+        print(li[i])
 
 
 def del_repeat():
@@ -61,7 +61,7 @@ def del_repeat():
     lis = ['zhangsan', 'li', 'wang', 'zhao', 'qian', 'sun', 'li', 'zhou', 'wu', 'li']
     for i in range(lis.count('li')):
         lis.remove('li')
-    print lis
+    print(lis)
 
 
 if __name__ == '__main__':
