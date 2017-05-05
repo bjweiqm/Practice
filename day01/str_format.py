@@ -69,7 +69,7 @@ print("i am %(name)s age %(age)d" % {"name": "alex", "age": 18})
 print("percent %.2f" % 99.97623)    # 打印浮点数
 print("i am %(pp).2f" % {"pp": 123.425556, })
 print("i am %(pp).2f %%" % {"pp": 123.425556, })     # 打印百分比
-print('i am %s my hobby is %s' % ('lhf', 1) )        # %s可以接受任意参数
+print('i am %s my hobby is %s' % ('lhf', 1))        # %s可以接受任意参数
 
 # format() 方式：
 print("i am {}, age {}, {}".format("seven", 18, 'alex'))
