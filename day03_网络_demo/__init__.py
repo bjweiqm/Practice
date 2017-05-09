@@ -4,9 +4,5 @@
 """
 @software: PyCharm
 @file: __init__.py.py
-@time: 2017/5/5 17:47
-opp的特性：
-封装
-继承
-多态
+@time: 2017/5/9 10:45
 """
